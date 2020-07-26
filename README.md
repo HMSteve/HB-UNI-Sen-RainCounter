@@ -8,7 +8,7 @@ Ein Wippenschlag entspricht 0.5mm Regen.
 
 Batteriefach und die Platine mit dem Reedkontakt werden wiederverwendet und die HF-Platine wird entfernt und durch eine AskSinPP-taugliche Platine ersetzt, z.B. meine Universalsensorplatine:
 
-[AskSinPP Universal Board](https://www.github.com/HMSteve/PCBs/AskSinPP_UniversalBoard)
+[AskSinPP Universal Board](https://github.com/HMSteve/PCBs/tree/master/AskSinPP_UniversalBoard)
 
 
 ## Software
