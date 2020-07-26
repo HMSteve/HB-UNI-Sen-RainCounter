@@ -1,6 +1,6 @@
 # Umbau TFA Dostmann Regenmesser zu AskSinPP Device
 
-Der [TFA Dostmann Ersatz-Regenmesser, Modell "Monsun"](https://www.amazon.de/gp/product/B00FYSUATO/) eigent sich hervorragend als Basis fuer einen Homebrew-Regenmesser. Es handelt sich um einen klassischen Wippenzaehler mit Reedkontakt und eingearbeitetem Gehaeuse fuer einen proprietaeren Funksender und ein Batteriefach 2xAA.
+Der [TFA Dostmann Ersatz-Regenmesser, Modell "Monsun"](https://www.amazon.de/gp/product/B00FYSUATO/) eigent sich hervorragend als Basis fuer einen Homebrew-Regenmesser. Es handelt sich um einen klassischen Wippenzaehler mit Reedkontakt und eingearbeitetem Gehaeuse fuer einen proprietaeren Funksender sowie einem Batteriefach 2xAA.
 
 ![mechanischer Aufbau](Images/mechanics.png)
 
@@ -13,7 +13,7 @@ Batteriefach und die Platine mit dem Reedkontakt werden wiederverwendet und die 
 
 ## Software
 
-Zunaechst ist das [Addon](https://github.com/HMSteve/HB-UNI-Sen-RainCounter/raw/master/CCU_RM/HB-UNI-Sen-RainCounter-addon.tgz) auf der CCU zu installieren. Die AskSinPP-Platine wird wie ueblich geflasht und kann dann bereits angelernt und getestet werden. Der relevante Datenpunkt ist RAIN_COUNTER, analog dem Homematic-Wetter-Kombisensor. Die CCU erzeugt deswegen beim Anlernen allein Systemvariablen fuer die gestrige und heutige Regenmenge sowie zwei Programme fuer deren Aktualisierung und Ruecksetzung. Dies kann bei Bedarf anschliessend angepasst werden. Ein Impuls am Zaehleingang sollte in der CCU-WebUI als 0.5mm Regen angezeigt werden.
+Zunaechst ist das [Addon](https://github.com/HMSteve/HB-UNI-Sen-RainCounter/raw/master/CCU_RM/HB-UNI-Sen-RainCounter-addon.tgz) auf der CCU zu installieren. Die AskSinPP-Platine wird wie ueblich geflasht und kann dann bereits angelernt und getestet werden. Der relevante Datenpunkt ist RAIN_COUNTER - analog dem Homematic-Wetter-Kombisensor. Die CCU erzeugt deswegen beim Anlernen automatisch Systemvariablen fuer die gestrige und heutige Regenmenge sowie zwei Programme fuer deren Aktualisierung und Ruecksetzung. Dies kann bei Bedarf anschliessend angepasst werden. An dieser Stelle empfielt sich ein erster Test: Ein Impuls am Zaehleingang sollte in der CCU-WebUI als 0.5mm Regen angezeigt werden.
 
 
 ## Umbau des Regenmessers
@@ -38,7 +38,7 @@ Am mit T2 markierten Loetauge wird zuletzt eine Litze fuer den Anschluss der Ask
 
 ### Schritt 3: Zusammenbau
 
-Die Platinen werden verbunden, oben die Originalplatinen, unten die AskSinPP-Platine. Nun kann die Elektronik wieder in das Elektronikfach einziehen. Man kann den im Batteriefach vorhandenen Taster natuerlich auch als Anlerntaster fuer die AskSinPP-Platine nutzen. Mir erschien das unnoetig. Fuer die einfache, Kurzschlussvermeidende Montage der AskSinPP-Platine kann bspw. ein Adapter gedruckt werden, der auf die Platine geschraubt und dann an Stelle der urspruenglichen HF-Platine in die entsprechenden Gehaeusefuehrungen geschoben wird (To-Do).
+Die Platinen werden verbunden, oben die Originalplatinen, unten die AskSinPP-Platine. Nun kann die Elektronik wieder in das Elektronikfach einziehen. Man kann den im Batteriefach vorhandenen Taster natuerlich auch als Anlerntaster fuer die AskSinPP-Platine nutzen. Mir erschien das unnoetig. Fuer die einfache, kurzschlussvermeidende Montage der AskSinPP-Platine kann bspw. ein Adapter gedruckt werden, der auf die Platine geschraubt und dann an Stelle der urspruenglichen HF-Platine in die entsprechenden Gehaeusefuehrungen geschoben wird (To-Do).
 
 ![Elektronik-Ueberblick](Images/overview.png)
 
