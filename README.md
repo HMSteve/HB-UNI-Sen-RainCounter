@@ -28,8 +28,11 @@ Auf der Platine mit den Batteriekontakten wird die Vcc-Leiterbahn gemaess der Ma
 
 ### Schritt 2: Originalplatine anpassen
 
-Zuerst sollten Q5, C7 und R12 zur Sicherheit entfernt werden, deren Funktion habe ich nicht weiter untersucht, sie sind jedoch mit dem Reedkontakt verbunden.
-Zum Entprellen des Reedkontaktes wird ein Tiefpass auf der Platine mit dem Reedkontakt integriert. Dazu wird zunaechst die Leiterbahn unter dem im Ursprungszustand nicht vorhandenen 220R-Widerstand im Bild bei Markierung 1 durchtrennt und sodann ein solcher Widerstand eingeloetet, der exakte Widerstandswert ist eher unkritisch. Danach wird bei Markierung 2 ein Kondensator von ca. 100nF eingeloetet, Bauform 1206 passt perfekt. Am mit T2 markierten Loetauge wird eine Litze fuer den Anschluss der AskSinPP-Platine angeloetet.
+Zuerst sollten Q5, C7 und R12 zur Sicherheit entfernt werden, deren Funktion habe ich nicht weiter untersucht, sie sind jedoch mit dem Reedkontakt verbunden (Markierung 0 im Bild).
+
+Zum Entprellen des Reedkontaktes wird sodann ein Tiefpass auf der Platine mit dem Reedkontakt integriert. Dazu wird zunaechst die Leiterbahn unter dem im Ursprungszustand nicht vorhandenen 220R-Widerstand im Bild bei Markierung 1 durchtrennt und sodann ein solcher Widerstand eingeloetet, der exakte Widerstandswert ist eher unkritisch. Danach wird bei Markierung 2 ein Kondensator von ca. 100nF eingeloetet, Bauform 1206 passt perfekt.
+
+Am mit T2 markierten Loetauge wird zuletzt eine Litze fuer den Anschluss der AskSinPP-Platine angeloetet.
 
 ![Entprellen](Images/debouncing.png)
 
