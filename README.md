@@ -13,7 +13,7 @@ Batteriefach und die Platine mit dem Reedkontakt werden wiederverwendet und die 
 
 ## Software
 
-Zunaechst ist das Addon auf der CCU zu installieren. Die AskSinPP-Platine wird wie ueblich geflasht und kann dann bereits angelernt und getestet werden. Der relevante Datenpunkt ist RAIN_COUNTER, analog dem Homematic-Wetter-Kombisensor. Die CCU erzeugt deswegen beim Anlernen allein Systemvariablen fuer die gestrige und heutige Regenmenge sowie zwei Programme fuer deren Aktualisierung und Ruecksetzung. Dies kann bei Bedarf anschliessend angepasst werden. Ein Impuls am Zaehleingang sollte in der CCU-WebUI als 0.5mm Regen angezeigt werden.
+Zunaechst ist das [Addon](https://github.com/HMSteve/HB-UNI-Sen-RainCounter/raw/master/CCU_RM/HB-UNI-Sen-RainCounter-addon.tgz) auf der CCU zu installieren. Die AskSinPP-Platine wird wie ueblich geflasht und kann dann bereits angelernt und getestet werden. Der relevante Datenpunkt ist RAIN_COUNTER, analog dem Homematic-Wetter-Kombisensor. Die CCU erzeugt deswegen beim Anlernen allein Systemvariablen fuer die gestrige und heutige Regenmenge sowie zwei Programme fuer deren Aktualisierung und Ruecksetzung. Dies kann bei Bedarf anschliessend angepasst werden. Ein Impuls am Zaehleingang sollte in der CCU-WebUI als 0.5mm Regen angezeigt werden.
 
 
 ## Umbau des Regenmessers
@@ -37,6 +37,11 @@ Zum Entprellen des Reedkontaktes wird ein Tiefpass auf der Platine mit dem Reedk
 Die Platinen werden verbunden, oben die Originalplatinen, unten die AskSinPP-Platine. Nun kann die Elektronik wieder in das Elektronikfach einziehen. Man kann den im Batteriefach vorhandenen Taster natuerlich auch als Anlerntaster fuer die AskSinPP-Platine nutzen. Mir erschien das unnoetig. Fuer die einfache, Kurzschlussvermeidende Montage der AskSinPP-Platine kann bspw. ein Adapter gedruckt werden, der auf die Platine geschraubt und dann an Stelle der urspruenglichen HF-Platine in die entsprechenden Gehaeusefuehrungen geschoben wird (To-Do).
 
 ![Elektronik-Ueberblick](Images/overview.png)
+
+
+## Disclaimer
+
+Die Nutzung der hier veroeffentlichten Inhalte erfolgt vollstaendig auf eigenes Risiko und ohne jede Gewaehr.
 
 
 ## Lizenz
