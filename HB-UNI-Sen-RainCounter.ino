@@ -1,12 +1,11 @@
 //---------------------------------------------------------
-// HB-UNI-Sensor1
-// Version 1.17
-// 2019-10-09 Tom Major (Creative Commons)
+// HB-UNI-SEN-RainCounter 2020-07-28 HMSteve (Stephan) 
 // https://creativecommons.org/licenses/by-nc-sa/4.0/
 // You are free to Share & Adapt under the following terms:
 // Give Credit, NonCommercial, ShareAlike
 // +++
 // AskSin++ 2016-10-31 papa Creative Commons
+// HB-UNI-Sensor1 2019-10-09 Tom Major (Creative Commons)
 //---------------------------------------------------------
 
 //---------------------------------------------------------
@@ -148,7 +147,7 @@ public:
         // Bei jeder 20. Nachricht senden wir stattdessen BIDI|WKMEUP, um eventuell anstehende Konfigurationsänderungen auch
         // ohne Betätigung des Anlerntaster übernehmen zu können (mit Verzögerung, worst-case 20x Sendeintervall).
         uint8_t flags = BCAST;
-        if ((msgcnt % 20) == 2) {
+        if ((msgcnt % 20) == 1) {
             flags = BIDI | WKMEUP;
         }
         Message::init(15, msgcnt, 0x70, flags, bl, 0);
@@ -281,6 +280,7 @@ public:
     void setup(Device<Hal, SensorList0>* dev, uint8_t number, uint16_t addr)
     {
         Channel::setup(dev, number, addr);
+        initSensors();
         set(seconds2ticks(5));    // first message in 5 sec.
         CLOCK.add(*this);
     }
@@ -340,9 +340,9 @@ void setup()
 
     pinMode(RAIN_COUNTER_PIN, INPUT_PULLUP);
     if ( digitalPinToInterrupt(RAIN_COUNTER_PIN) == NOT_AN_INTERRUPT ) 
-      enableInterrupt(RAIN_COUNTER_PIN, raincounterISR, RISING); 
+      enableInterrupt(RAIN_COUNTER_PIN, raincounterISR, FALLING); 
     else 
-      attachInterrupt(digitalPinToInterrupt(RAIN_COUNTER_PIN), raincounterISR, RISING);
+      attachInterrupt(digitalPinToInterrupt(RAIN_COUNTER_PIN), raincounterISR, FALLING);
      
 }
 
