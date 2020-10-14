@@ -41,7 +41,7 @@
 
 
 // unique device radio ID and logic serial
-#define cDEVICE_ID      { 0xA5, 0xA5, 0x0D }
+#define cDEVICE_ID      { 0xF8, 0x21, 0x01 }
 #define cDEVICE_SERIAL  "SGSENRNC01"
 
 
@@ -100,7 +100,7 @@ void raincounterISR() {
 const struct DeviceInfo PROGMEM devinfo = {
     cDEVICE_ID,        // Device ID
     cDEVICE_SERIAL,    // Device Serial
-    { 0xF1, 0x08 },    // Device Model  // SG: changed for Rain counter. Unisensor1 is 0xF1, 0x03, need mechanism to avoid duplicates!!!
+    { 0xF8, 0x21 },    // Device Model  // SG: changed for Rain counter. Unisensor1 is 0xF1, 0x03, need mechanism to avoid duplicates!!!
     // Firmware Version 
     // die CCU Addon xml Datei ist mit der Zeile <parameter index="9.0" size="1.0" cond_op="E" const_value="0x13" />
     // fest an diese Firmware Version gebunden! cond_op: E Equal, GE Greater or Equal
