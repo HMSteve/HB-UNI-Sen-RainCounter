@@ -13,7 +13,7 @@ Batteriefach und die Platine mit dem Reedkontakt werden wiederverwendet und die 
 
 ## Software
 
-Zunaechst ist das [Addon](https://github.com/HMSteve/HB-UNI-Sen-RainCounter/raw/master/CCU_RM/HB-UNI-Sen-RainCounter-addon.tgz) auf der CCU zu installieren. Die AskSinPP-Platine wird wie ueblich geflasht und kann dann bereits angelernt und getestet werden. Der relevante Datenpunkt ist RAIN_COUNTER - analog dem Homematic-Wetter-Kombisensor. Die CCU erzeugt deswegen beim Anlernen automatisch Systemvariablen fuer die gestrige und heutige Regenmenge sowie zwei Programme fuer deren Aktualisierung und Ruecksetzung. Dies kann bei Bedarf anschliessend angepasst werden. An dieser Stelle empfielt sich ein erster Test: Ein Impuls am Zaehleingang sollte in der CCU-WebUI als 0.5mm Regen angezeigt werden.
+Zunaechst ist das [Addon](https://github.com/HMSteve/sg-hb-devices-addon/raw/master/CCU_RM/sg-hb-devices-addon.tgz) auf der CCU zu installieren. Die AskSinPP-Platine wird wie ueblich geflasht und kann dann bereits angelernt und getestet werden. Der relevante Datenpunkt ist RAIN_COUNTER - analog dem Homematic-Wetter-Kombisensor. Die CCU erzeugt deswegen beim Anlernen automatisch Systemvariablen fuer die gestrige und heutige Regenmenge sowie zwei Programme fuer deren Aktualisierung und Ruecksetzung. Dies kann bei Bedarf anschliessend angepasst werden. An dieser Stelle empfielt sich ein erster Test: Ein Impuls am Zaehleingang sollte in der CCU-WebUI als 0.5mm Regen angezeigt werden.
 
 
 ## Umbau des Regenmessers
